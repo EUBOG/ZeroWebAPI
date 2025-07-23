@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Две цитаты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f4;
+        }
+        .quote-box {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .quote {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .author {
+            font-style: italic;
+            color: #555;
+        }
+        .refresh a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-box">
+        <p class="quote">“{{ quote1.quote }}”</p>
+        <p class="author">— {{ quote1.author }}</p>
+    </div>
+
+    <div class="quote-box">
+        <p class="quote">“{{ quote2.quote }}”</p>
+        <p class="author">— {{ quote2.author }}</p>
+    </div>
+
+    <p class="refresh"><a href="/">↻ Получить новые цитаты</a></p>
+</body>
+</html>
